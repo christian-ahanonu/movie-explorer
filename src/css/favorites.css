@@ -1,0 +1,116 @@
+:root {
+
+    /* font family  */
+    --font-family: 'Red Hat Display', Helvetica, sans-serif;
+
+    /* colors */
+    --primary-color: #8B5CF6;
+    --secondary-color: #F8FAFC;
+
+    /* --dark-grey: #0F172A; */
+    --dark-grey: #111317;
+    /* --dark-medium-grey: #1E293B; */
+    --dark-medium-grey: #1a1d23;
+    --dark-light-grey: #334155;
+
+    --light-grey: #CBD5E1;
+    --light-medium-grey: #94A3B8;
+    --light-dark-grey: #475569;
+
+    --accent-color1: #FBBF24;
+    --accent-color2: #F97316;
+
+    /* sizes  */
+    --font-base: 16px;
+    --small-font: 0.8em;
+    --large-font: 1.2em;
+}
+
+.favorites-section {
+    padding: 4rem 0;
+    min-height: 70vh;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.heart-icon {
+    font-size: 2rem;
+}
+
+.section-description {
+    color: var(--light-medium-grey);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+/* Empty State Styles */
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.5;
+}
+
+.empty-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.empty-description {
+    color: var(--light-medium-grey);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Hide empty state when favorites exist */
+.has-favorites .empty-state {
+    display: none;
+}
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .favorites-section {
+        padding: 3rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .empty-state {
+        padding: 3rem 1rem;
+    }
+
+    .empty-title {
+        font-size: 1.5rem;
+    }
+
+    .empty-icon {
+        font-size: 3rem;
+    }
+}
