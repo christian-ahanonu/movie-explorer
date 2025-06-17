@@ -1,83 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Discover, explore and learn about movies with Movie Explorer. Find ratings, reviews, trailers and more."
+        />
+        <meta name="author" content="Christian I. Ahanonu" />
+        <title>Movie Explorer - Discover Amazing Movies</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover, explore and learn about movies with Movie Explorer. Find ratings, reviews, trailers and more.">
-    <meta name="author" content="Christian I. Ahanonu">
-    <title>Movie Explorer - Discover Amazing Movies</title>
+        <meta
+            property="og:title"
+            content="Movie Explorer - Discover Amazing Movies"
+        />
+        <meta
+            property="og:description"
+            content="Discover, explore and learn about movies with Movie Explorer. Find ratings, reviews, trailers and more."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="" />
+        <meta
+            property="og:url"
+            content="https://christian-ahanonu.github.io/movie-explorer/index.html"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
 
-    <meta property="og:title" content="Movie Explorer - Discover Amazing Movies">
-    <meta property="og:description" content="Discover, explore and learn about movies with Movie Explorer. Find ratings, reviews, trailers and more.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="https://christian-ahanonu.github.io/movie-explorer/index.html">
-    <meta name="twitter:card" content="summary_large_image">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+        <link rel="stylesheet" href="/css/index.css" />
+        <script src="/js/index.js" type="module"></script>
+    </head>
 
-    <link rel="stylesheet" href="/css/index.css">
-    <script src="../js/index.js" type="module"></script>
+    <body>
+        <!-- Header Navigation -->
+        <header class="header" id="headerData"></header>
 
-</head>
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-container">
+                    <h1>
+                        Discover Amazing<br />
+                        <span class="highlight">Movies</span>
+                    </h1>
+                    <p>
+                        Explore thousands of movies, read reviews, watch
+                        trailers, and<br />
+                        find your next favorite film.
+                    </p>
 
-<body>
-    <!-- Header Navigation -->
-    <header class="header" id="headerData"> </header>
+                    <div class="search-container">
+                        <input
+                            type="text"
+                            class="search-input"
+                            placeholder="Search for any movie..."
+                            id="search-value"
+                        />
+                        <button class="search-btn" id="search-Id">
+                            <img
+                                src="/images/search-interface-symbol.png"
+                                alt="search"
+                            />
+                        </button>
+                    </div>
+                    <span class="search-error"></span>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-container">
-                <h1>
-                    Discover Amazing<br>
-                    <span class="highlight">Movies</span>
-                </h1>
-                <p>
-                    Explore thousands of movies, read reviews, watch trailers, and<br>
-                    find your next favorite film.
-                </p>
-    
-                <div class="search-container">
-                    <input type="text" class="search-input" placeholder="Search for any movie..." id="search-value">
-                    <button class="search-btn" id="search-Id">
-                        <img src="/images/search-interface-symbol.png" alt="search">
-                    </button>
+                    <a href="/movies/movies.html" class="cta-btn">
+                        Explore All Movies →
+                    </a>
                 </div>
-                <span class="search-error"></span>
-    
-                <a href="/movies/movies.html" class="cta-btn">
-                    Explore All Movies →
-                </a>
-            </div>
-        </section>
-    
-        <!-- Featured Movies Section -->
-        <section class="featured-section">
+            </section>
 
-            <div class="container">
-                <div class="section-header">
-                    <span class="trending-icon">
-                        <img src="/images/trend.png" alt="trend">
-                    </span>
-                    <h2 class="section-title">Featured Movies</h2>
+            <!-- Featured Movies Section -->
+            <section class="featured-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="trending-icon">
+                            <img src="/images/trend.png" alt="trend" />
+                        </span>
+                        <h2 class="section-title">Featured Movies</h2>
+                    </div>
+
+                    <div class="movies-grid"></div>
                 </div>
-    
-                <div class="movies-grid">
+            </section>
+        </main>
 
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer-end" id="footerData"> </footer>
-
-</body>
-
+        <footer class="footer-end" id="footerData"></footer>
+    </body>
 </html>

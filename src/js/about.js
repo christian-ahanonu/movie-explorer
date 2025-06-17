@@ -4,7 +4,6 @@ import {
     initializeMobileMenu,
 } from "./modules/Utils.mjs";
 
-
 // Initialize utilities
 loadHeaderFooter(() => {
     setActiveNavLink();
@@ -14,4 +13,3 @@ loadHeaderFooter(() => {
 document.addEventListener("DOMContentLoaded", () => {
     initializeMobileMenu();
 });
-

@@ -1,11 +1,10 @@
 :root {
-
     /* font family  */
-    --font-family: 'Red Hat Display', Helvetica, sans-serif;
+    --font-family: "Red Hat Display", Helvetica, sans-serif;
 
     /* colors */
-    --primary-color: #8B5CF6;
-    --secondary-color: #F8FAFC;
+    --primary-color: #8b5cf6;
+    --secondary-color: #f8fafc;
 
     /* --dark-grey: #0F172A; */
     --dark-grey: #111317;
@@ -13,12 +12,12 @@
     --dark-medium-grey: #1a1d23;
     --dark-light-grey: #334155;
 
-    --light-grey: #CBD5E1;
-    --light-medium-grey: #94A3B8;
+    --light-grey: #cbd5e1;
+    --light-medium-grey: #94a3b8;
     --light-dark-grey: #475569;
 
-    --accent-color1: #FBBF24;
-    --accent-color2: #F97316;
+    --accent-color1: #fbbf24;
+    --accent-color2: #f97316;
 
     /* sizes  */
     --font-base: 16px;
@@ -85,8 +84,6 @@
 .has-favorites .empty-state {
     display: none;
 }
-
-
 
 /* Mobile Responsive */
 @media (max-width: 768px) {

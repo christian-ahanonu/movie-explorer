@@ -1,63 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Your personal collection of favorite movies"
+        />
+        <meta name="author" content="Christian I. Ahanonu" />
+        <title>My Favorites - Movie Explorer</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your personal collection of favorite movies">
-    <meta name="author" content="Christian I. Ahanonu">
-    <title>My Favorites - Movie Explorer</title>
+        <meta
+            property="og:title"
+            content="Movie Explorer - Discover Amazing Movies"
+        />
+        <meta
+            property="og:description"
+            content="Discover, explore and learn about movies with Movie Explorer. Find ratings, reviews, trailers and more."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="" />
+        <meta
+            property="og:url"
+            content="https://christian-ahanonu.github.io/movie-explorer/index.html"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
 
-    <meta property="og:title" content="Movie Explorer - Discover Amazing Movies">
-    <meta property="og:description" content="Discover, explore and learn about movies with Movie Explorer. Find ratings, reviews, trailers and more.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="https://christian-ahanonu.github.io/movie-explorer/index.html">
-    <meta name="twitter:card" content="summary_large_image">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/favorites.css">
-    <script src="../js/favorites.js" type="module"></script>
-</head>
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/favorites.css" />
+        <script src="../js/favorites.js" type="module"></script>
+    </head>
 
-<body>
-    <!-- Header Navigation -->
-    <header class="header" id="headerData"> </header>
+    <body>
+        <!-- Header Navigation -->
+        <header class="header" id="headerData"></header>
 
-    <main>
-        <!-- Favorites Section -->
-        <section class="favorites-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="heart-icon">❤️</span>
-                    <h1 class="section-title">My Favorites</h1>
-                </div>
-                <p class="section-description">Your personal collection of favorite movies</p>
-
-                <!-- Empty State -->
-                <div class="empty-state" id="empty-state">
-                    <div class="empty-icon">❤️</div>
-                    <h2 class="empty-title">No favorites yet</h2>
-                    <p class="empty-description">
-                        Start adding movies to your favorites by clicking the heart icon on any movie card.
+        <main>
+            <!-- Favorites Section -->
+            <section class="favorites-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="heart-icon">❤️</span>
+                        <h1 class="section-title">My Favorites</h1>
+                    </div>
+                    <p class="section-description">
+                        Your personal collection of favorite movies
                     </p>
+
+                    <!-- Empty State -->
+                    <div class="empty-state" id="empty-state">
+                        <div class="empty-icon">❤️</div>
+                        <h2 class="empty-title">No favorites yet</h2>
+                        <p class="empty-description">
+                            Start adding movies to your favorites by clicking
+                            the heart icon on any movie card.
+                        </p>
+                    </div>
+
+                    <!-- Favorites Grid -->
+                    <div class="movies-grid" id="favorites-grid">
+                        <!-- Favorite movies will be dynamically inserted here -->
+                    </div>
                 </div>
+            </section>
+        </main>
 
-                <!-- Favorites Grid -->
-                <div class="movies-grid" id="favorites-grid">
-                    <!-- Favorite movies will be dynamically inserted here -->
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer-end" id="footerData"> </footer>
-
-</body>
-
+        <footer class="footer-end" id="footerData"></footer>
+    </body>
 </html>

@@ -1,87 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Discover, explore and learn about movies with Movie Explorer. Find ratings, reviews, trailers and more."
+        />
+        <meta name="author" content="Christian I. Ahanonu" />
+        <title>Movie Collection - Movie Explorer</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover, explore and learn about movies with Movie Explorer. Find ratings, reviews, trailers and more.">
-    <meta name="author" content="Christian I. Ahanonu">
-    <title>Movie Collection - Movie Explorer</title>
-    
-    <meta property="og:title" content="Movie Explorer - Discover Amazing Movies">
-    <meta property="og:description" content="Discover, explore and learn about movies with Movie Explorer. Find ratings, reviews, trailers and more.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="https://christian-ahanonu.github.io/movie-explorer/index.html">
-    <meta name="twitter:card" content="summary_large_image">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+        <meta
+            property="og:title"
+            content="Movie Explorer - Discover Amazing Movies"
+        />
+        <meta
+            property="og:description"
+            content="Discover, explore and learn about movies with Movie Explorer. Find ratings, reviews, trailers and more."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="" />
+        <meta
+            property="og:url"
+            content="https://christian-ahanonu.github.io/movie-explorer/index.html"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/movies.css">
-    <script src="../js/movies.js" type="module"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
 
-</head>
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/movies.css" />
+        <script src="../js/movies.js" type="module"></script>
+    </head>
 
-<body>
+    <body>
+        <!-- Header Navigation -->
+        <header class="header" id="headerData"></header>
 
-    <!-- Header Navigation -->
-    <header class="header" id="headerData"> </header>
-
-    <main>
-
-        <!-- Movies Hero Section -->
-        <section class="movies-hero">
-            <div class="movies-header">
-                <h1 class="movies-title">Movie Collection</h1>
-                <p class="movies-subtitle">Discover and explore our extensive collection of movies</p>
-            </div>
-        </section>
-    
-        <!-- Search and Filter Section -->
-        <section class="search-filter-section">
-            
-            <div class="search-filter-container">
-                <div class="movies-search-container">
-                    <input type="text" class="movies-search-input" placeholder="Search for movies...">
-                    <button class="movies-search-btn">
-                        <img src="/images/search-interface-symbol.png" alt="search">
-                    </button>
+        <main>
+            <!-- Movies Hero Section -->
+            <section class="movies-hero">
+                <div class="movies-header">
+                    <h1 class="movies-title">Movie Collection</h1>
+                    <p class="movies-subtitle">
+                        Discover and explore our extensive collection of movies
+                    </p>
                 </div>
-    
-                <div class="filter-container">
-                    <span class="filter-icon">
-                        <img src="/images/filter.png" alt="search">
-                    </span>
-                    <select class="genre-select" title="genres">
-                        <option value="All Genres">All Genres</option>
-                    </select>
+            </section>
+
+            <!-- Search and Filter Section -->
+            <section class="search-filter-section">
+                <div class="search-filter-container">
+                    <div class="movies-search-container">
+                        <input
+                            type="text"
+                            class="movies-search-input"
+                            placeholder="Search for movies..."
+                        />
+                        <button class="movies-search-btn">
+                            <img
+                                src="/images/search-interface-symbol.png"
+                                alt="search"
+                            />
+                        </button>
+                    </div>
+
+                    <div class="filter-container">
+                        <span class="filter-icon">
+                            <img src="/images/filter.png" alt="search" />
+                        </span>
+                        <select class="genre-select" title="genres">
+                            <option value="All Genres">All Genres</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-        </section>
-    
-        <!-- Movies Grid Section -->
-        <section class="movies-grid-section">
-            <div class="movies-container">
-                <div class="movies-grid">
-                    <!-- Movies will be dynamically loaded here -->
+            </section>
+
+            <!-- Movies Grid Section -->
+            <section class="movies-grid-section">
+                <div class="movies-container">
+                    <div class="movies-grid">
+                        <!-- Movies will be dynamically loaded here -->
+                    </div>
+
+                    <div class="load-more-container">
+                        <button class="load-more-btn">Load More Movies</button>
+                    </div>
                 </div>
-    
-                <div class="load-more-container">
-                    <button class="load-more-btn">Load More Movies</button>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
-    </main>
-
-
-    <footer class="footer-end" id="footerData"> </footer>
-
-
-</body>
-
+        <footer class="footer-end" id="footerData"></footer>
+    </body>
 </html>
