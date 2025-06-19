@@ -63,7 +63,7 @@ export async function loadTemplate(path) {
 export function setActiveNavLink() {
     // Get the current path from the URL
     let currentPath = window.location.pathname;
-    console.log(currentPath)
+    // console.log(currentPath);
 
     // Handle the root path
     if (currentPath === "/" || currentPath === "") {
@@ -81,8 +81,7 @@ export function setActiveNavLink() {
 
         // Get the href and ensure it starts with /
         const href = link.getAttribute("href");
-        console.log(href);
-        
+        // console.log(href);
 
         // Exact match comparison
         if (currentPath === href) {
@@ -90,7 +89,7 @@ export function setActiveNavLink() {
         }
     });
 
-    console.log("Current path:", currentPath); // For debugging
+    // console.log("Current path:", currentPath); // For debugging
 }
 
 export function addToFavorites(movie) {
@@ -151,16 +150,17 @@ export function showNotification(message) {
     // Add to container
     notificationContainer.appendChild(notification);
 
-    // Remove after animation
+    // Remove after animation (4 seconds total)
     setTimeout(() => {
         notification.classList.add("fade-out");
         setTimeout(() => {
             notification.remove();
+            // Only remove container if no notifications left
             if (notificationContainer.children.length === 0) {
                 notificationContainer.remove();
             }
-        }, 300);
-    }, 3000);
+        }, 300); // Animation duration
+    }, 4000); // Show duration before fade starts
 }
 
 // Mobile Menu functionality

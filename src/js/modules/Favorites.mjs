@@ -1,10 +1,7 @@
 import {
     getLocalStorage,
-    setLocalStorage,
     updateFavoritesCount,
-    addToFavorites,
     removeFromFavorites,
-    showNotification,
 } from "./Utils.mjs";
 
 export default class FavoritesManager {
